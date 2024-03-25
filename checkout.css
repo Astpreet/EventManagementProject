@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header {
+    background-color: #333;
+    color: rgb(251, 2, 97);
+    text-align: center;
+    padding: 10px;
+   
+}
+
+section {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input,
+select {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color:  rgb(251, 2, 97);
+}
+body.booking-success {
+    background-color: #ff69b4; 
+}
+#content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+#eventForm,
+        #paymentForm {
+            width: 50%; 
+            margin-right: 20px; 
+            border: 1px solid #ddd; 
+            padding: 20px;
+            background-color: rgba(249, 249, 249, 0.9); 
+            border-radius: 5px; 
+        }
+
+
+#paymentForm {
+    display: none;
+    margin-top: 20px;
+}
+
+#totalAmount {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+#scrollButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+#rotatingText {
+    position: fixed;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4rem; 
+    font-family: 'Open Sans', sans-serif; 
+    color: #ff0077; 
+    text-shadow: 2px 2px 4px #000, -2px -2px 4px #000; 
+    animation: rotateText 5s infinite linear;
+}
+
+@keyframes rotateText {
+    0% {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-color: #ff0582; 
+    color: #fff; 
+    cursor: pointer;
+}
